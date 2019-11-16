@@ -10,7 +10,9 @@ class ProductsController < ApplicationController
   end
 
   def description
-  end 
+    product = Product.find(params[:id])
+    render plain: product.description
+  end
 
   def create
   end
