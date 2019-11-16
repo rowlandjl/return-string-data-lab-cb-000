@@ -9,8 +9,11 @@ class ProductsController < ApplicationController
     render plain: product.inventory > 0 ? true : false
   end
 
-  def create
+  def description
   end 
+
+  def create
+  end
 
   private
 
